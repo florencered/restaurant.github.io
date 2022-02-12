@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>landingpage</title> 
+	<meta charset="UTF-8"> 
+	<meta name="blog" content="landing page">
+	<meta name="owned by" content="template"> 
+	<meta name="keywords" content="HTML, CSS,landing,resolutions,template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="https://kit.fontawesome.com/53d3f12009.js" crossorigin="anonymous"></script> 
+</head> 
+	<style type="text/css">
+		*{
+			margin: 0px; 
+			padding: 0px; 
+			box-shadow:border-box;
+		}
+		nav{
+			background-color: #000080; 
+			width: 100%; 
+			height:15vh; 
+			/*color:white;*/ 
+			color: white;
+		} 
+		.names{
+			text-decoration: none; 
+			color:white; 
+			list-style: none; 
+			text-transform: uppercase; 
+			font-size:3vmin; 
+			line-height:10px;
+			
+
+		} 
+		#check{ 
+			margin-right: 40px;
+			color: white;
+			float: right; 
+			padding-top: 10px; 
+			display: none;
+
+		} 
+		#bars{
+			margin-right: 40px;
+			line-height:10vh;
+			color: white;
+			float: right; 
+			cursor: pointer; 
+			display: none;
+		} 
+		nav ul{ 
+			text-align: right; 
+			font-weight: bold;
+
+		}
+		nav ul li{
+			display: inline-block; 
+			padding-bottom: 15px; 
+			padding-right: 15px; 
+			padding-left: 15px;
+		} 
+		#home{
+			color: white;
+		} 
+		a.names:hover,#home{
+			background-color:#E30B5C; 
+			color: white;
+			padding:0.3rem 0.5rem; /*ideal size for creating a button*/
+			border-radius: 3%; 
+			
+		} 
+		.logo{
+			
+		padding:50px 100px;  
+		line-height:10vh;
+		font-size: 25px;
+		} 
+		.intro{
+				
+				background-position: center; 
+				background-size: cover; 
+				background-repeat: no-repeat; 
+				width: 100%; 
+				height:65vh; 
+				color: white; 
+				text-align: center; 
+				padding-top: 80px; 
+				line-height:1.6; 
+				animation-name:slideshow; 
+				animation-duration: 4s;
+				animation-iteration-count: infinite; 
+				transition-timing-function: ease-in-out;
+				
+		} 
+		@keyframes slideshow{
+			0%{
+				background-image:url("2.jpg");
+			} 
+			
+			
+			100%{
+				background-image:url("5.jpg");
+			}
+				
+		} 
+		.subheading{
+			margin-top: 25px; 
+			font-size:6vmin;
+		} 
+		.para{ 
+			font-size:4vmin
+		} 
+		.line{
+		width:180px; 
+		height: 5px; 
+		margin:8px auto; /*top bottomleft and right,auto creates equal margin from bth sides*/
+		background:#E30B5C; 
+		border-radius: 3px;
+		}  
+		.normalheading{
+			text-align: center; 
+			font-size:4.5vmin;
+
+		} 
+		.row{
+			display: flex;
+			flex-direction: row; 
+			width:100%;
+			align-items: center; 
+			justify-content: space-around; 
+			
+		} 
+		.col{
+
+			display: flex;
+			flex-direction:column; 
+			width:100%;
+			align-items: center; 
+			background-color: #D3D3D3; 
+			box-shadow:0px 1px 5px grey; 
+			margin:5px; 
+			padding-top:4vmin; 
+
+		} 
+		.content{
+			text-align: center; 
+
+		}
+		.gallery-row{ 
+			flex-direction:row; 
+			display: flex;  
+			width: 100%;
+		}  
+		.images img{ 
+			height: 200px; 
+			width: 200px; 
+			margin: 5px; 
+			margin-right: 5px; 
+			
+
+		} 
+		.content{
+			text-align: center; 
+			margin-top: 5vmin; 
+			
+		}
+		.content-col{  
+			display: flex; 
+			flex-direction:column;
+			width:60% ;
+			height:50px; 
+			margin:10vmin; 
+			margin-top:15vmin;
+			line-height:3;
+
+		}
+
+		.image-col{  
+			display: flex; 
+			flex-direction:column;
+			width:40% 
+			height:50px; 
+			text-align: right; 
+			margin-right:5vmin; 
+			margin-left: 8vmin; 
+			margin-top: 5vmin; 
+			margin-bottom:5vmin;
+
+		}  
+		.images{
+			display: flex; 
+			flex-wrap: wrap; 
+			
+
+
+		} 
+		footer{
+			display: block;
+			background-color:#000080; 
+			height:10vmin;  
+			text-align: center; 
+			padding-top: 1rem;
+
+		} 
+		.logo{
+			padding-right:2px; 
+			margin-right:2px;
+
+		} 
+		h2{
+			font-size:5vmin;
+		}
+		
+			
+		@media(max-width:1165px){ 
+
+			
+			.end{  
+				display: block
+				
+
+
+			} 
+			.logo{
+				font-size:8vmin !important; 
+				
+			}
+
+			.navbar{
+				position: fixed;
+				height:20vmin; 
+
+			} 
+			.row{
+				flex-wrap: wrap;
+			} 
+			.gallery-row{
+				flex-wrap: wrap; 
+
+
+			}
+			.content-col{ 
+				margin-top:2vmin;
+				line-height: 1.6; 
+				width: 100%; 
+				margin-bottom:10rem;
+				
+			} 
+			.image-col{
+				width:100%; 
+				margin-top:8rem; 
+				margin-bottom:3rem;
+			
+
+			} 
+			.images{
+				 
+				justify-content: center;
+
+			}
+
+			
+			.links{
+				position: fixed;
+				background-color:#E30B5C; 
+				height: 100vh; 
+				width: 100%; 
+				text-align: center; 
+				padding-top: 1vh; 
+				display: flex; 
+				justify-content: center; 
+				flex-direction: column;
+				
+			} 
+			nav ul li{ 
+
+				
+				display:block;
+				padding-right: 5px;
+				
+				padding-top: 2vh; 
+				margin-left: auto; 
+				margin-right: auto;
+				height:100vh;
+
+			}  
+
+			
+			
+			.names{ 
+				
+				padding-top: 9vh; 
+				padding-right: 5px;
+				font-size:7vmin; 
+				font-weight: bold; 
+				color:white;
+
+			} 
+			.icon{
+				font-size:6vmin; 
+			 
+
+
+			} 
+			#home{
+				padding-top:0.1rem;
+			}
+
+			footer{
+				background-color:#000080; 
+				height:30%; 
+				width: 100%; 
+				padding-top:1rem; 
+				text-align: center;
+
+			}
+			
+			a.names:hover,#home{
+				color:#000080
+			} 
+			#bars{
+				display: block; 
+				margin-top:2px;
+			} 
+			#check:checked ~ #heading{	
+				display:none; 
+			} 
+			
+			
+		}
+
+	</style>
+<body> 
+	<!--whole section--> 
+	<div class="wrapper">
+		<!--navbar--> 
+		<nav class="navbar"> 
+			<!--logo--> 
+			<label class="logo">Geeky Noobs</label> <!--the computer reads oout whatever is encloed in label--> 
+			<input type="checkbox" id="check"> 
+			<label for="check" class='checkbtn'><i class="fas fa-bars fa-2x" id="bars"></i></label>	
+			
+			<ul class="links" id='heading'> 
+				<li><a href="#" class='names' id='home'>Home</a></li> 
+				<li><a href="https://florencered.github.io/restaurant_newsletter.github.io/" class="names">Newsletter</a></li> 
+				<li><a href="https://florencered.github.io/revised-feedback-form.github.io/" class="names">Feedback Form</a></li> 
+				<li><a href="about.html" class="names">About Us</a></li> 	
+			</ul>
+		</nav> 
+		<section class="intro"> 
+			<h1 class="subheading">Welcome to Geeky Noobs</h1> 
+			<div class="line"></div>
+			<p class="para"><b>Experience the aura of authentic food from different parts of the world with different servings</b></p>
+			
+		</section> 
+		<section class="two-photo"> 
+			<div class="normalheading">
+				<h1 class="cuisines">Our cuisines</h1> 
+				<div class="line"></div> 
+			</div> 
+			<div class="row"> 
+				<div class="col"> 
+					<img src="1.jpg" alt='food photo' style="height:300px;width:300px"> 
+					<h2>Food1</h2>
+					<p>This is a random food and this is a random text ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+				</div> 
+				<div class="col"> 
+					<img src="4.jpg" alt='food photo' style="height:300px;width:300px"> 
+					<h2>Food2</h2>
+					<p>This is a random food and this is a random text ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+				</div> 
+			</div> 
+		</section> 
+		<section  class="gallery">
+			<div class="content"> 
+				<h2>Witness our work</h2>
+				<div class="line"></div>
+			</div> 
+			<div class="gallery-row">  
+				<div class="content-col"> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div> 
+				<div class="image-col"> 
+					<div class="images"> 
+						<img src="1.jpg" alt="image gallery photo"> 
+						<img src="2.jpg" alt="image gallery photo"> 
+						<img src="3.jpg" alt="image gallery photo"> 
+						<img src="4.jpg" alt="image gallery photo">
+					
+					</div>
+				</div>  
+			</div>
+		</section> 
+		<footer class="end">  
+			<p class="footer"> 
+					<a href ="https://www.instagram.com" class="icon"> 
+						<i class="fab fa-instagram fa-x"style="color:white; margin-right:2px" ></i>
+					</a>
+					<a href="https://www.discord.com" class="icon">
+						<i class="fab fa-discord fa-x" style="color:white; margin-right:2px"></i>
+					</a>
+					<a href="https://www.twitter.com" class="icon">
+						<i class="fab fa-twitter fa-x" style="color:white;margin-right:2px "></i>
+					</a> 
+					<p style="color:white">&copy; 2021geekynoobspvt.ltd</p >
+
+				
+			</p>
+		</footer>
+	</div>
+
+</body>
+</html>

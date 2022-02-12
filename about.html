@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>frontpage</title> 
+	<meta charset="UTF-8"> 
+	<meta name="blog" content="landing page">
+	<meta name="owned by" content="template"> 
+	<meta name="keywords" content="HTML, CSS,landing,resolutions,template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="https://kit.fontawesome.com/53d3f12009.js" crossorigin="anonymous"></script> 
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Syne+Tactile&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">  
+
+		p{
+			font-size: 20px;
+		} 
+		h1{
+			font-size: 40px;
+		}
+		body{
+
+			
+			background-position: center; 
+			background-size: cover; 
+			height:100%;
+			width:100vw;
+			animation-name:slideshow; 
+			animation-duration: 12s;
+			animation-iteration-count: infinite; 
+			transition-timing-function: ease-in-out; 
+			color: #00FFFF; 
+			border-spacing: 0px;
+			margin: 0px; 
+			text-align: center; 
+			font-family: 'Architects Daughter', cursive;
+		} 
+		@keyframes slideshow{
+			0%{
+				background-image:url("npic1.jpg");
+			} 
+			
+			40%{
+				background-image:url("npic4.jpg");
+			} 
+			
+			70%{
+				background-image:url("npic8.jpg");
+			}
+			100%{
+				background-image:url("pic6.jpg");
+			}
+		} 
+		@media (max-width: 600px){ 
+			#arrow{
+			box-shadow: 0px 1px 5px grey;
+			} 
+			.box:hover{
+			
+			width: 100px; 
+			padding: 0px 10px; 
+			transition: 0.6s; 
+
+			}
+		}  
+		.box{ 
+			width:0px; 
+			padding: 0px;
+
+		} 
+		.box:hover{
+			
+			width: 260px; 
+			padding: 0px 10px; 
+			transition: 0.6s; 
+
+		}
+		
+	</style>
+</head> 
+
+<body> 
+	<div class="wrapper"> 
+		<!--the intro heading and para-->
+		<div class="intro" style="padding-top: 110px;text-align:center;color: white" >
+			<h1>Welcome to     <span style="font-family: 'Syne Tactile', cursive; color:white;font-size:45px"><i class="fas fa-glasses"></i><b>Geeky Noobs</b><i class="far fa-registered fa-x"></i></span></h1>
+			<p><b>We stand for something good for all our geeky noobster folks!!That means carefully sourced preminum ingredients from like-minded purveyors we admire and love.Thoughtful,well-crafted and responsible design for it's place.One stop multi cuisine restaurant for indulging in cuisines from different parts of the world.We wish you a pleasant eating experience...</b></p>
+		</div> 
+		<!--asking to log in--> 
+		<div class="asking"> 
+			<h2 style="color:white">Enter you credentials</h2>
+		</div> 
+		<!--email ID--> 
+		<div class="credentials" style="display:flex;justify-content:center;height:40px;margin-bottom:15px"> 
+			<i class="fas fa-envelope fa-x" style="color:black;background-color:#EC5800;padding:8px;padding-top:10px "id='email'></i> 
+			<input type="text" placeholder="Pls enter your Email"class="box"> 
+			<button type="button" name='button' style="color:black;background-color:#EC5800;cursor:pointer;border:none;outline:none;">ENTER</button> 
+		</div> 
+		<div class="credentials" style="display:flex;justify-content:center;height:40px;"> 
+			<i class="fas fa-key" style="color:black;background-color:#EC5800;padding:8px;padding-top:10px"></i> 
+			<input type="text" placeholder="Pls enter your password"class="box"> 
+			<button type="button" name='button' style="color:black;background-color:#EC5800;cursor:pointer;border:none;outline:none;">ENTER</button> 
+		</div> 
+		
+		<footer style="font-size: 15px;text-align:left;padding-right:5px;color:yellow;">&copy; 2021geekynoobspvt.ltd</footer>
+		
+	</div>
+</body>
+</html>
